@@ -1,20 +1,13 @@
-import React, { useState } from "react";
+import React from "react";
 import { AppBar, Box, Button, Icon, IconButton, Toolbar } from "@mui/material";
 import { Menu } from "@mui/icons-material";
 
 import HeaderLogo from "../../assets/logo_header.svg";
 
-const menuItens = [
-  { title: "Início", href: "" },
-  { title: "Competições", href: "" },
-  { title: "Áreas", href: "" },
-  { title: "Membros", href: "" },
-  { title: "Contato", href: "" },
-  { title: "Seja um apoiador", href: "", style: true },
-];
+import { useSiteContext } from "../../contexts/SiteContext";
 
 export function NavBar() {
-  const [mobileOpen, setMobileOpen] = useState(false);
+  const { mobileOpen, setMobileOpen, menuItens } = useSiteContext();
 
   function handleDrawerToggle() {
     setMobileOpen(!mobileOpen);
@@ -24,11 +17,11 @@ export function NavBar() {
     <AppBar position="fixed" component="nav" color="background">
       <Toolbar>
         <IconButton
-          color="inherit"
           aria-label="open drawer"
           edge="start"
           onClick={handleDrawerToggle}
           sx={{ mr: 2, display: { sm: "none" } }}
+          color="text"
         >
           <Menu />
         </IconButton>
