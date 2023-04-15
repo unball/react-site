@@ -10,7 +10,7 @@ const menuItens = [
   { title: "Áreas", href: "" },
   { title: "Membros", href: "" },
   { title: "Contato", href: "" },
-  { title: "Seja um apoiador", href: "" },
+  { title: "Seja um apoiador", href: "", style: true },
 ];
 
 export function NavBar() {
@@ -21,7 +21,7 @@ export function NavBar() {
   }
 
   return (
-    <AppBar position="fixed" component="nav">
+    <AppBar position="fixed" component="nav" color="background">
       <Toolbar>
         <IconButton
           color="inherit"
@@ -43,11 +43,28 @@ export function NavBar() {
           <img style={{ height: "100%" }} src={HeaderLogo} alt="" />
         </Icon>
         <Box sx={{ display: { xs: "none", sm: "block" } }}>
-          {menuItens.map((item) => (
-            <Button key={item.title} variant="text" sx={{ color: "#fff", textTransform: 'none' }}>
-              {item.title}
-            </Button>
-          ))}
+          {menuItens.map((item) => {
+            if (item.style)
+              return (
+                <Button
+                  key={item.title}
+                  variant="contained"
+                  color="link"
+                  sx={{ color: "#fff", textTransform: "none" }}
+                >
+                  {item.title}
+                </Button>
+              );
+            return (
+              <Button
+                key={item.title}
+                variant="text"
+                sx={{ color: "#fff", textTransform: "none" }}
+              >
+                {item.title}
+              </Button>
+            );
+          })}
         </Box>
       </Toolbar>
     </AppBar>
