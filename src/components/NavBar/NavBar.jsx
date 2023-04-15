@@ -14,7 +14,7 @@ export function NavBar() {
   }
 
   return (
-    <AppBar position="fixed" component="nav" color="background">
+    <AppBar position="fixed" component="nav" color="backgroundLight">
       <Toolbar>
         <IconButton
           aria-label="open drawer"
@@ -43,7 +43,7 @@ export function NavBar() {
                   key={item.title}
                   variant="contained"
                   color="link"
-                  sx={{ color: "#fff", textTransform: "none" }}
+                  sx={{ color: "text.main", textTransform: "none", fontWeight: 700 }}
                 >
                   {item.title}
                 </Button>
@@ -52,7 +52,7 @@ export function NavBar() {
               <Button
                 key={item.title}
                 variant="text"
-                sx={{ color: "#fff", textTransform: "none" }}
+                sx={{ color: "text.main", textTransform: "none", fontWeight: 700 }}
               >
                 {item.title}
               </Button>
