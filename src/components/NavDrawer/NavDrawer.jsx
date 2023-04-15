@@ -37,7 +37,14 @@ export function NavDrawer() {
           "& .MuiDrawer-paper": { boxSizing: "border-box", width: drawerWidth },
         }}
       >
-        <Box onClick={handleDrawerToggle} sx={{ textAlign: "center" }}>
+        <Box
+          onClick={handleDrawerToggle}
+          sx={{
+            textAlign: "center",
+            backgroundColor: "backgroundLight.main",
+            height: "100%",
+          }}
+        >
           <Icon sx={{ my: 2 }}>
             <img style={{ height: "100%" }} src={HeaderLogo} alt="" />
           </Icon>
@@ -47,15 +54,27 @@ export function NavDrawer() {
               if (item.style)
                 return (
                   <ListItem key={item.title} disablePadding>
-                    <ListItemButton sx={{ textAlign: "center" }}>
-                      <ListItemText primary={item.title} />
+                    <ListItemButton
+                      sx={{
+                        textAlign: "center",
+                        backgroundColor: "link.main",
+                        borderRadius: 3,
+                      }}
+                    >
+                      <ListItemText
+                        primaryTypographyProps={{ color: "text.main", fontWeight: "700" }}
+                        primary={item.title}
+                      />
                     </ListItemButton>
                   </ListItem>
                 );
               return (
                 <ListItem key={item.title} disablePadding>
                   <ListItemButton sx={{ textAlign: "center" }}>
-                    <ListItemText primary={item.title} />
+                    <ListItemText
+                      primaryTypographyProps={{ color: "text.main", fontWeight: "700" }}
+                      primary={item.title}
+                    />
                   </ListItemButton>
                 </ListItem>
               );
