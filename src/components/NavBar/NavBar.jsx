@@ -44,7 +44,7 @@ export function NavBar() {
         </Icon>
         <Box sx={{ display: { xs: "none", sm: "block" } }}>
           {menuItens.map((item) => (
-            <Button key={item.title} variant="text" sx={{ color: "#fff" }}>
+            <Button key={item.title} variant="text" sx={{ color: "#fff", textTransform: 'none' }}>
               {item.title}
             </Button>
           ))}
