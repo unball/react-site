@@ -31,6 +31,7 @@ export function NavBar() {
             flexGrow: 1,
             display: { xs: "none", sm: "block" },
             textAlign: "left",
+            height: 30
           }}
         >
           <img style={{ height: "100%" }} src={HeaderLogo} alt="" />
