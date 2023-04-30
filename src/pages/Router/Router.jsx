@@ -19,7 +19,13 @@ const pages = [
 
 export function Router() {
   const pageRoutes = pages.map(({ path, element, title }) => {
-    return <Route key={title} path={`/${path}`} element={<Template>{element}</Template>} />;
+    return (
+      <Route
+        key={title}
+        path={`/${path}`}
+        element={<Template>{element}</Template>}
+      />
+    );
   });
   return <Routes>{pageRoutes}</Routes>;
 }

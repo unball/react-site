@@ -10,8 +10,8 @@ export function Template({ children }) {
       <Box sx={{ display: "flex" }}>
         <NavBar />
         <NavDrawer />
-        {children}
       </Box>
+      {children}
     </SiteContextProvider>
   );
 }
