@@ -14,7 +14,7 @@ export function NavBar() {
   }
 
   return (
-    <AppBar position="fixed" component="nav" color="backgroundLight">
+    <AppBar position="static" component="nav" color="backgroundLight">
       <Toolbar>
         <IconButton
           aria-label="open drawer"
