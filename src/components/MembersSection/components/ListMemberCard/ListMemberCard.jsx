@@ -16,12 +16,12 @@ export function ListMemberCard() {
       {listPaths.map((item) => {
         if (item?.captain === true) {
           return (
-            <Box marginTop="40px">
-              <MemberCard key={item.name} item={item} />
+            <Box marginTop="40px" key={Math.random()}>
+              <MemberCard item={item} />
             </Box>
           );
         }
-        return <></>;
+        return <Box key={Math.random()}></Box>;
       })}
 
       <Stack
@@ -33,9 +33,9 @@ export function ListMemberCard() {
       >
         {listPaths.map((item) => {
           if (!item.captain) {
-            return <MemberCard key={item.name} item={item} />;
+            return <MemberCard key={Math.random()} item={item} />;
           }
-          return <></>;
+          return <Box key={Math.random()}></Box>;
         })}
       </Stack>
     </Box>
