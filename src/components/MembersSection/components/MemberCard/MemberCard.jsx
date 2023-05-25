@@ -13,7 +13,7 @@ export function MemberCard({ item }) {
         }}
       >
         <Image
-          alt={item.name}
+          alt={`Foto de ${item.name}`}
           src={item.path}
           sx={{
             width: "162px",
