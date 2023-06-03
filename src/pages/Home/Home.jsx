@@ -6,6 +6,7 @@ import { CompetitionsSection } from "../../components/CompetitionsSection";
 import { ContactSection } from "../../components/ContactSection";
 import { MembersSection } from "../../components/MembersSection";
 import { Box } from "@mui/material";
+import { Footer } from "../../components/Footer/Footer";
 
 export function Home() {
   return (
@@ -15,6 +16,7 @@ export function Home() {
       <CompetitionsSection />
       <ContactSection />
       <MembersSection />
+      <Footer />
     </Box>
   );
 }
