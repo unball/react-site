@@ -13,7 +13,7 @@ export const listPaths = [
   {
     captain: true,
     name: "Ayssa",
-    degree: "Ciências da computação",
+    degree: "Ciência da Computação",
     path: Ayssa,
   },
   {
