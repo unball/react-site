@@ -33,11 +33,10 @@ export function AboutSection() {
         }}
       >
         <Typography
-          variant="h2"
+          variant="h1"
           sx={{
             color: "link.main",
             fontWeight: 700,
-            fontSize: { sm: "50px", md: "70px", lg: "90px" },
           }}
         >
           {TITLE}
@@ -47,7 +46,6 @@ export function AboutSection() {
           sx={{
             color: "text.main",
             fontWeight: 700,
-            fontSize: { sm: "28px", md: "32px", lg: "48px" },
           }}
         >
           {SUBTITLE}
@@ -57,7 +55,6 @@ export function AboutSection() {
           sx={{
             color: "text.main",
             paddingRight: { xs: "20px", sm: "50px", md: "100px" },
-            fontSize: { sm: "16px", md: "18px", lg: "24px" },
             lineHeight: "200%",
           }}
         >
