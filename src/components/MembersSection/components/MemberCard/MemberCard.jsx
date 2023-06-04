@@ -1,75 +1,74 @@
 import React from "react";
-import { Box, Stack, Typography } from "@mui/material";
+import { Box, Grid, Stack, Typography } from "@mui/material";
 import { Image } from "mui-image";
 
 export function MemberCard({ item }) {
   return (
-    <Stack direction="column" justifyContent="center" alignItems="center">
-      <Box
-        sx={{
-          width: "170px",
-          height: "170px",
-          marginTop: "5px",
-        }}
-      >
-        <Image
-          alt={`Foto de ${item.name}`}
-          src={item.path}
+    <Grid item xs={3}>
+      <Stack direction="column" justifyContent="center" alignItems="center">
+        <Box
           sx={{
-            width: "162px",
-            height: "162px",
-            borderRadius: "100px",
-            border: "3px solid #FFFFFF",
+            width: "170px",
+            height: "170px",
+            marginTop: "5px",
           }}
-          alignSelf="center"
-        />
-      </Box>
-      <Stack
-        width="100%"
-        justifyContent="center"
-        direction="column"
-        alignItems="center"
-      >
-        {item?.captain && (
-          <Typography
+        >
+          <Image
+            alt={`Foto de ${item.name}`}
+            src={item.path}
             sx={{
-              color: "#EF6F1E",
-              fontWeight: 500,
-              fontSize: { sm: "10px", md: "15px", lg: "18px" },
-              marginTop: "20px",
-              lineHeight: "2px",
+              width: "162px",
+              height: "162px",
+              borderRadius: "100px",
+              border: "3px solid #FFFFFF",
+            }}
+            alignSelf="center"
+          />
+        </Box>
+        <Stack
+          width="100%"
+          justifyContent="center"
+          direction="column"
+          alignItems="center"
+        >
+          {item?.captain && (
+            <Typography
+              variant="h5"
+              color="link.main"
+              sx={{
+                fontWeight: 500,
+                marginTop: "20px",
+                lineHeight: "2px",
+              }}
+            >
+              Capitania
+            </Typography>
+          )}
+          <Typography
+            variant="body1"
+            color="text.light"
+            sx={{
+              fontWeight: 700,
+              marginTop: "10px",
+              marginBottom: "0",
             }}
           >
-            Capitania
+            {item.name}
           </Typography>
-        )}
-
-        <Typography
-          variant="subtitle1"
-          sx={{
-            color: "#E1E1E6",
-            fontWeight: 700,
-            fontSize: { sm: "10px", md: "15px", lg: "27px" },
-            marginTop: "10px",
-            marginBottom: "0",
-          }}
-        >
-          {item.name}
-        </Typography>
-        <Typography
-          variant="subtitle2"
-          sx={{
-            color: "#9C9CA1",
-            fontWeight: 500,
-            fontSize: { sm: "10px", md: "15px", lg: "14px" },
-            marginTop: "0",
-            marginBottom: "30px",
-            lineHeight: "0px",
-          }}
-        >
-          {item.degree}
-        </Typography>
+          <Typography
+            variant="body2"
+            color="text.dark"
+            sx={{
+              fontWeight: 400,
+              marginTop: "0",
+              marginBottom: "30px",
+              lineHeight: "10px",
+            }}
+          >
+            {item.degree}
+          </Typography>
+        </Stack>
       </Stack>
-    </Stack>
+    </Grid>
   );
 }
