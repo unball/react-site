@@ -6,11 +6,10 @@ export function TitlePage() {
   return (
     <Stack width="100%" justifyContent="center" direction="row">
       <Typography
-        variant="h2"
+        variant="h3"
+        color= "text.main"
         sx={{
-          color: "text.main",
           fontWeight: 700,
-          fontSize: { sm: "26px", md: "36px", lg: "36px" },
         }}
       >
         {TITLE}
