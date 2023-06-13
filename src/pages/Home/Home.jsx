@@ -11,10 +11,10 @@ export function Home() {
   return (
     <Box>
       <AboutSection />
-      <AreasSection />
       <CompetitionsSection />
-      <ContactSection />
       <MembersSection />
+      <AreasSection />
+      <ContactSection />
     </Box>
   );
 }
