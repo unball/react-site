@@ -4,16 +4,15 @@ import { Button } from "@mui/material";
 export function ButtonDonation() {
   return (
     <Button
-      variant="text"
+      variant="contained"
+      color="link"
       sx={{
-        color: "text.main",
         textTransform: "none",
         fontWeight: 700,
-        backgroundColor: "#EF6F1E",
         width: "240px",
         height: "60px",
-        borderRadius: "10px",
         fontSize: "18px",
+        borderRadius: "10px",
       }}
     >
       Faça uma doação

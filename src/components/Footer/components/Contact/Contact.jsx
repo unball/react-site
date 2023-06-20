@@ -7,22 +7,15 @@ import { DESCRIPTION_CONTACT } from "../../Texts";
 export function Contact() {
   return (
     <Box
-      marginLeft="160px"
-      marginTop="37px"
-      paddingRight="44px"
-      width="516px"
       color="text.main"
+      width={{xs: "100%", sm: "40%"}}
     >
-      <Typography
-        fontWeight="700"
-        sx={{ fontSize: { sm: "16px", md: "24px", lg: "24px" } }}
-        color="link.main"
-      >
+      <Typography fontWeight="700" variant="body1" color="link.main">
         Contato
       </Typography>
       <Typography
+        variant="body2"
         sx={{
-          fontSize: { sm: "12px", md: "16px", lg: "16px" },
           marginTop: "24px",
           marginBottom: "38px",
         }}
@@ -31,7 +24,9 @@ export function Contact() {
       </Typography>
 
       {listContact.map((item) => {
-        return <ContactCard icon={item.icon} link={item.link} />;
+        return (
+          <ContactCard key={Math.random()} icon={item.icon} link={item.link} />
+        );
       })}
     </Box>
   );

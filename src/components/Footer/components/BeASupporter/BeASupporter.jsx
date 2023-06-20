@@ -6,17 +6,14 @@ import { ButtonDonation } from "./components/ButtonDonation";
 
 export function BeASupporter() {
   return (
-    <Box marginLeft="114px" marginTop="37px" color="text.main">
-      <Typography
-        fontWeight="700"
-        sx={{ fontSize: { sm: "16px", md: "24px", lg: "24px" } }}
-        color="link.main"
-      >
+    <Box width={{xs: "100%", sm: "40%"}}>
+      <Typography fontWeight="700" variant="body1" color="link.main">
         Seja um apoiador
       </Typography>
       <Typography
+        variant="body2"
+        color="text.main"
         sx={{
-          fontSize: { sm: "12px", md: "16px", lg: "16px" },
           marginTop: "24px",
           marginBottom: "64px",
         }}

@@ -14,7 +14,7 @@ export function ContactCard({ icon, link }) {
       gap="10px"
     >
       {icon}
-      <Typography color="text.main">{link}</Typography>
+      <Typography color="text.main" variant="body2">{link}</Typography>
     </Box>
   );
 }
