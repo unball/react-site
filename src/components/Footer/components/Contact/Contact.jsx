@@ -1,14 +1,15 @@
 import React from "react";
-import { Box, Typography } from "@mui/material";
+import { Stack, Typography } from "@mui/material";
 import { ContactCard } from "./components/ContactCard/ContactCard";
 import listContact from "./listContact";
 import { DESCRIPTION_CONTACT } from "../../Texts";
 
 export function Contact() {
   return (
-    <Box
+    <Stack
+      direction="column"
       color="text.main"
-      width={{xs: "100%", sm: "40%"}}
+      width={{ xs: "100%", sm: "40%" }}
     >
       <Typography fontWeight="700" variant="body1" color="link.main">
         Contato
@@ -25,9 +26,14 @@ export function Contact() {
 
       {listContact.map((item) => {
         return (
-          <ContactCard key={Math.random()} icon={item.icon} link={item.link} />
+          <ContactCard
+            key={Math.random()}
+            icon={item.icon}
+            link={item.link}
+            fullLink={item.fullLink}
+          />
         );
       })}
-    </Box>
+    </Stack>
   );
 }
