@@ -3,6 +3,7 @@ import { Box } from "@mui/material";
 import { NavBar } from "../NavBar/NavBar";
 import { NavDrawer } from "../NavDrawer/NavDrawer";
 import { SiteContextProvider } from "../../contexts/SiteContext";
+import { Footer } from "../Footer";
 
 export function Template({ children }) {
   return (
@@ -12,6 +13,7 @@ export function Template({ children }) {
         <NavDrawer />
       </Box>
       {children}
+      <Footer />
     </SiteContextProvider>
   );
 }
