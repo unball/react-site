@@ -1,9 +1,26 @@
 import React from "react";
+import { TitlePage } from "./components/TitlePage";
+import { Stack } from "@mui/material";
+import { ListAreas } from "./components/ListAreas/ListAreas";
 
 export function AreasSection() {
-  return(
-    <div id="areas">
-      <h1>Areas</h1>
-    </div>
-  )
+  return (
+    <Stack
+      id="areas"
+      height="fit-content"
+      w="100%"
+      sx={{
+        backgroundColor: "background.main",
+        paddingBottom: "160px",
+      }}
+      paddingY={5}
+      direction="column"
+      spacing={{ xs: 2, sm: 4 }}
+      justifyContent="center"
+      alignItems="center"
+    >
+      <TitlePage />
+      <ListAreas />
+    </Stack>
+  );
 }
