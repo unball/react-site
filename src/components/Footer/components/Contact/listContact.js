@@ -9,7 +9,7 @@ const listContact = [
   },
   {
     icon: <InstagramIcon sx={{ fontSize: 40 }} />,
-    link: "intagram/equipe.unball",
+    link: "instagram/equipe.unball",
   },
   {
     icon: <MailOutlineIcon sx={{ fontSize: 40 }} />,
