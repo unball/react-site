@@ -20,7 +20,7 @@ let theme = createTheme({
       main: "#D5D5DA",
       dark: "#9C9CA1",
     },
-    link: { main: "#EF6F1E" },
+    link: { main: "#EF6F1E", contrastText: "#E1E1E6" },
   },
   typography: {
     h1: {
