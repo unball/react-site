@@ -8,9 +8,7 @@ export function TitlePage() {
       <Typography
         variant="h3"
         color= "text.main"
-        sx={{
-          fontWeight: 700,
-        }}
+        fontWeight="700"
       >
         {TITLE}
       </Typography>
