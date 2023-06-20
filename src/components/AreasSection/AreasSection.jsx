@@ -7,12 +7,15 @@ export function AreasSection() {
   return (
     <Stack
       id="areas"
+      height="fit-content"
+      w="100%"
       sx={{
-        backgroundColor: "#121214",
+        backgroundColor: "background.main",
         paddingBottom: "160px",
       }}
-      direction={{ xs: "column", sm: "column" }}
-      spacing={{ xs: 1, sm: 2, md: 4 }}
+      paddingY={5}
+      direction="column"
+      spacing={{ xs: 2, sm: 4 }}
       justifyContent="center"
       alignItems="center"
     >
