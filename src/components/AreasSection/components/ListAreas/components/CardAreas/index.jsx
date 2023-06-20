@@ -1,0 +1,1 @@
+export { CardAreas } from "./CardAreas";
