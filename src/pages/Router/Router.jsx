@@ -3,6 +3,7 @@ import { Template } from "../../components/Template";
 
 import { Home } from "../Home";
 import { Support } from "../Support";
+import { RoadmapTrainee } from "../RoadmapTrainee/RoadmapTrainee";
 
 const pages = [
   {
@@ -14,6 +15,11 @@ const pages = [
     path: "/support",
     element: <Support />,
     title: "support",
+  },
+  {
+    path: "/roadmaptrainee",
+    element: <RoadmapTrainee />,
+    title: "roadmap-trainee",
   },
 ];
 

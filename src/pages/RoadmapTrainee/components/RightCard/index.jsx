@@ -1,0 +1,1 @@
+export { RightCard } from "./RightCard";

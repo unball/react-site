@@ -1,0 +1,1 @@
+export { LeftCard } from "./LeftCard";
