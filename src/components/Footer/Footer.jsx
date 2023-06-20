@@ -1,21 +1,24 @@
 import React from "react";
-import { Box } from "@mui/material";
+import { Box, Stack } from "@mui/material";
 import { Contact } from "./components/Contact";
 import { Divider } from "./components/Divider";
 import { BeASupporter } from "./components/BeASupporter";
 
 export function Footer() {
   return (
-    <Box
-      backgroundColor="#202024"
-      width="100%"
-      height="378px"
-      display="flex"
-      flexDirection="row"
-    >
-      <Contact />
-      <Divider />
-      <BeASupporter />
-    </Box>
+    <Stack w="100%">
+      <Stack
+        direction={{ xs: "column", sm: "row" }}
+        backgroundColor="backgroundLight.main"
+        paddingX={{ xs: 2, sm: 4, md: 8, lg: 12 }}
+        paddingY={4}
+        justifyContent={{xs: "center", sm: "space-around"}}
+        alignItems={{xs: "center", sm: "self-start" }}
+      >
+        <Contact />
+        <Divider />
+        <BeASupporter />
+      </Stack>
+    </Stack>
   );
 }
