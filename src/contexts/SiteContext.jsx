@@ -1,12 +1,13 @@
 import React, { createContext, useContext, useState } from "react";
 
 const menuItens = [
-  { title: "Início", href: "" },
-  { title: "Competições", href: "" },
-  { title: "Áreas", href: "" },
-  { title: "Membros", href: "" },
-  { title: "Contato", href: "" },
-  { title: "Seja um apoiador", href: "", style: true },
+  { title: "Início", href: "/#" },
+  // { title: "Competições", href: "/#competitions" },
+  { title: "Sobre", href: "/#about" },
+  { title: "Membros", href: "/#members" },
+  { title: "Áreas", href: "/#areas" },
+  { title: "Contato", href: "/#footer" },
+  { title: "Seja um apoiador", href: "/support", style: true },
 ];
 
 const initialValue = {
