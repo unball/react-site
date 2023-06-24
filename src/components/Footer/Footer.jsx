@@ -6,7 +6,7 @@ import { BeASupporter } from "./components/BeASupporter";
 
 export function Footer() {
   return (
-    <Stack w="100%">
+    <Stack w="100%" id="footer">
       <Stack
         direction={{ xs: "column", sm: "row" }}
         backgroundColor="backgroundLight.main"
