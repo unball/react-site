@@ -53,30 +53,48 @@ export function NavDrawer() {
             {menuItens.map((item) => {
               if (item.style)
                 return (
-                  <ListItem key={item.title} disablePadding>
-                    <ListItemButton
-                      sx={{
-                        textAlign: "center",
-                        backgroundColor: "link.main",
-                        borderRadius: 3,
-                      }}
-                    >
+                  <a
+                    href={item.href}
+                    style={{ textDecoration: "none" }}
+                    key={item.title}
+                  >
+                    <ListItem disablePadding>
+                      <ListItemButton
+                        sx={{
+                          textAlign: "center",
+                          backgroundColor: "link.main",
+                          borderRadius: 3,
+                        }}
+                      >
+                        <ListItemText
+                          primaryTypographyProps={{
+                            color: "text.main",
+                            fontWeight: "700",
+                          }}
+                          primary={item.title}
+                        />
+                      </ListItemButton>
+                    </ListItem>
+                  </a>
+                );
+              return (
+                <a
+                  href={item.href}
+                  style={{ textDecoration: "none" }}
+                  key={item.title}
+                >
+                  <ListItem disablePadding>
+                    <ListItemButton sx={{ textAlign: "center" }}>
                       <ListItemText
-                        primaryTypographyProps={{ color: "text.main", fontWeight: "700" }}
+                        primaryTypographyProps={{
+                          color: "text.main",
+                          fontWeight: "700",
+                        }}
                         primary={item.title}
                       />
                     </ListItemButton>
                   </ListItem>
-                );
-              return (
-                <ListItem key={item.title} disablePadding>
-                  <ListItemButton sx={{ textAlign: "center" }}>
-                    <ListItemText
-                      primaryTypographyProps={{ color: "text.main", fontWeight: "700" }}
-                      primary={item.title}
-                    />
-                  </ListItemButton>
-                </ListItem>
+                </a>
               );
             })}
           </List>
