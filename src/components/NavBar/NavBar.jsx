@@ -40,9 +40,12 @@ export function NavBar() {
           {menuItens.map((item) => {
             if (item.style)
               return (
-                <a href={item.href}>
+                <a
+                  href={item.href}
+                  style={{ textDecoration: "none" }}
+                  key={item.title}
+                >
                   <Button
-                    key={item.title}
                     variant="contained"
                     color="link"
                     sx={{
@@ -56,9 +59,12 @@ export function NavBar() {
                 </a>
               );
             return (
-              <a href={item.href}>
+              <a
+                href={item.href}
+                style={{ textDecoration: "none" }}
+                key={item.title}
+              >
                 <Button
-                  key={item.title}
                   variant="text"
                   sx={{
                     color: "text.main",
