@@ -10,7 +10,7 @@ export function Home() {
   return (
     <Box backgroundColor="background.main">
       <AboutSection />
-      <CompetitionsSection />
+      {/* <CompetitionsSection /> */}
       <MembersSection />
       <AreasSection />
     </Box>
