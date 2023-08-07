@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/react-site/static/css/main.9d1fa318.css",
-    "main.js": "/react-site/static/js/main.0517038e.js",
+    "main.js": "/react-site/static/js/main.7932339b.js",
     "static/js/787.dd4029b4.chunk.js": "/react-site/static/js/787.dd4029b4.chunk.js",
     "static/media/baliza-foto.png": "/react-site/static/media/baliza-foto.fa6bb63281eca1fee631.png",
     "static/media/ayssa-foto.png": "/react-site/static/media/ayssa-foto.7f99fc96f04312fc7463.png",
@@ -51,11 +51,11 @@
     "static/media/roboto-greek-ext-700-normal.woff2": "/react-site/static/media/roboto-greek-ext-700-normal.bd9854c751441ccc1a70.woff2",
     "index.html": "/react-site/index.html",
     "main.9d1fa318.css.map": "/react-site/static/css/main.9d1fa318.css.map",
-    "main.0517038e.js.map": "/react-site/static/js/main.0517038e.js.map",
+    "main.7932339b.js.map": "/react-site/static/js/main.7932339b.js.map",
     "787.dd4029b4.chunk.js.map": "/react-site/static/js/787.dd4029b4.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.9d1fa318.css",
-    "static/js/main.0517038e.js"
+    "static/js/main.7932339b.js"
   ]
 }
