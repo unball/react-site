@@ -1,5 +1,5 @@
 import React from "react";
-import { Stack, Box, Typography, Container } from "@mui/material";
+import { Stack, Box, Typography } from "@mui/material";
 import Image from "mui-image";
 
 import AboutLogo from "../../assets/logo_about.png";

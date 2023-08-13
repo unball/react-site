@@ -1,5 +1,5 @@
 import React from "react";
-import { Box, Stack } from "@mui/material";
+import { Stack } from "@mui/material";
 import { Contact } from "./components/Contact";
 import { Divider } from "./components/Divider";
 import { BeASupporter } from "./components/BeASupporter";

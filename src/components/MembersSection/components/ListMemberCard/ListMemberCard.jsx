@@ -1,5 +1,5 @@
 import React from "react";
-import { Stack, Box, Grid } from "@mui/material";
+import { Box, Grid } from "@mui/material";
 import { listPaths } from "../../../../assets/avatar/index";
 import { MemberCard } from "../MemberCard";
 
