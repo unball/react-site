@@ -6,6 +6,16 @@ import HeaderLogo from "../../assets/logo_header.svg";
 
 import { useSiteContext } from "../../contexts/SiteContext";
 
+document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+  anchor.addEventListener('click', function (e) {
+      e.preventDefault();
+
+      document.querySelector(this.getAttribute('href')).scrollIntoView({
+          behavior: 'smooth'
+      });
+  });
+});
+
 export function NavBar() {
   const { mobileOpen, setMobileOpen, menuItens } = useSiteContext();
 
@@ -14,7 +24,7 @@ export function NavBar() {
   }
 
   return (
-    <AppBar position="static" component="nav" color="backgroundLight">
+    <AppBar position="fixed" component="nav" color="backgroundLight">
       <Toolbar>
         <IconButton
           aria-label="open drawer"
@@ -31,7 +41,7 @@ export function NavBar() {
             flexGrow: 1,
             display: { xs: "none", sm: "block" },
             textAlign: "left",
-            height: 30
+            height: 30,
           }}
         >
           <img style={{ height: "100%" }} src={HeaderLogo} alt="" />
@@ -44,19 +54,29 @@ export function NavBar() {
                   key={item.title}
                   variant="contained"
                   color="link"
-                  sx={{ color: "text.main", textTransform: "none", fontWeight: 700 }}
+                  sx={{
+                    color: "text.main",
+                    textTransform: "none",
+                    fontWeight: 700,
+                  }}
                 >
                   {item.title}
                 </Button>
               );
             return (
-              <Button
-                key={item.title}
-                variant="text"
-                sx={{ color: "text.main", textTransform: "none", fontWeight: 700 }}
-              >
-                {item.title}
-              </Button>
+              <a href={item.href}>
+                <Button
+                  key={item.title}
+                  variant="text"
+                  sx={{
+                    color: "text.main",
+                    textTransform: "none",
+                    fontWeight: 700,
+                  }}
+                >
+                  {item.title}
+                </Button>
+              </a>
             );
           })}
         </Box>
