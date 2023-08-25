@@ -6,16 +6,6 @@ import HeaderLogo from "../../assets/logo_header.svg";
 
 import { useSiteContext } from "../../contexts/SiteContext";
 
-document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-  anchor.addEventListener('click', function (e) {
-      e.preventDefault();
-
-      document.querySelector(this.getAttribute('href')).scrollIntoView({
-          behavior: 'smooth'
-      });
-  });
-});
-
 export function NavBar() {
   const { mobileOpen, setMobileOpen, menuItens } = useSiteContext();
 
