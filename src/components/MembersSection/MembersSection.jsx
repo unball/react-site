@@ -12,7 +12,7 @@ export function MembersSection() {
       paddingLeft={{ xs: 1, sm: 0 }}
       direction={{ xs: "column", sm: "row" }}
       sx={{ backgroundColor: "background.main" }}
-      paddingY={5}
+      paddingTop={10}
       alignItems="flex-start"
       justifyContent="center"
       flexWrap="wrap"

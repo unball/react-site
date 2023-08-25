@@ -10,6 +10,7 @@ export function Contact() {
       direction="column"
       color="text.main"
       width={{ xs: "100%", sm: "40%" }}
+      id="contact"
     >
       <Typography fontWeight="700" variant="body1" color="link.main">
         Contato
