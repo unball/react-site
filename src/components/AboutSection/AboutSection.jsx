@@ -11,6 +11,7 @@ export function AboutSection() {
     <Stack
       id="about"
       w="100%"
+      marginTop={{xs: 0, sm: 4}}
       paddingLeft={{ xs: 1, sm: 0 }}
       direction={{ xs: "column", sm: "row" }}
       sx={{ backgroundColor: "background.main" }}
