@@ -2,9 +2,9 @@ import React, { createContext, useContext, useState } from "react";
 
 const menuItens = [
   { title: "Início", href: "#root" },
-  { title: "Competições", href: "#competitions" },
-  { title: "Áreas", href: "#areas" },
+  // { title: "Competições", href: "#competitions" },
   { title: "Membros", href: "#members" },
+  { title: "Áreas", href: "#areas" },
   { title: "Contato", href: "#contact" },
   { title: "Seja um apoiador", href: "", style: true },
 ];

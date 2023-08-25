@@ -13,7 +13,7 @@ export function AreasSection() {
         backgroundColor: "background.main",
         paddingBottom: "160px",
       }}
-      paddingY={5}
+      paddingTop={10}
       direction="column"
       spacing={{ xs: 2, sm: 4 }}
       justifyContent="center"
